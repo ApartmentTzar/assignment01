@@ -3,21 +3,19 @@
 #include <math.h>
 
 int main(void){
-	double initial_value, final_value, time_total, years, weeks, days;
+	double initial_value, final_value, years;
 	
-	printf("Initial value: \n");
+	printf("Initial value?: ");
 	scanf("%lf",&initial_value);
-	printf("Final value: \n");
+	printf("Final value?: ");
 	scanf("%lf",&final_value);
-	printf("Years: \n");
+	printf("Years?: ");
 	scanf("%lf",&years);
-	//printf("Weeks: \n");
-	//scanf("%lf",&weeks);
-	//printf("Days: \n");
-	//scanf("%lf",&days);
-
-	//years=years + (weeks/52) + (days/365);
+	
+	printf("Initial value: $%.2lf",initial_value);
+	printf("Final value:   $%.2lf",final_value);
+	printf("Years:           %.2lf",years);
 
 	final_value = ((pow((final_value/initial_value),(1/years)))-1)*100;
-	printf("%.3lf%%\n",final_value);
+	printf("%lf%%\n",final_value);
 }
