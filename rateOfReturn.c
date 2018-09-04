@@ -17,5 +17,5 @@ int main(void){
 	printf("Years:           %.2lf",years);
 
 	final_value = ((pow((final_value/initial_value),(1/years)))-1)*100;
-	printf("%lf%%\n",final_value);
+	printf("Annualized rate of return: %lf%%\n",final_value);
 }
