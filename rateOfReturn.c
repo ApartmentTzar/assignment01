@@ -18,8 +18,8 @@ int main(void){
 	years=years + (weeks/52) + (days/365);
 	printf("Initial value: $%.2lf\n",initial_value);
 	printf("Final value:   $%.2lf\n",final_value);
-	printf("Years:           %lf\n",years);
+	printf("Years:           %.2lf\n",years);
 
 	final_value = ((pow((final_value/initial_value),(1/years)))-1)*100;
-	printf("Annualized rate of return: %lf%%\n",final_value);
+	printf("Annualized rate of return: %.2lf%%\n",final_value);
 }
