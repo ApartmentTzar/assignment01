@@ -15,7 +15,7 @@ int main(void){
 	scanf("%lf",&weeks);
 	printf("Days?: ");
 	scanf("%lf",&days);
-	years=years + (weeks/52) + (days/365)	
+	years=years + (weeks/52) + (days/365);
 	printf("Initial value: $%.2lf\n",initial_value);
 	printf("Final value:   $%.2lf\n",final_value);
 	printf("Years:           %lf\n",years);
