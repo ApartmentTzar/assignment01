@@ -12,9 +12,9 @@ int main(void){
 	printf("Years?: ");
 	scanf("%lf",&years);
 	
-	printf("Initial value: $%.2lf",initial_value);
-	printf("Final value:   $%.2lf",final_value);
-	printf("Years:           %.2lf",years);
+	printf("Initial value: $%.2lf\n",initial_value);
+	printf("Final value:   $%.2lf\n",final_value);
+	printf("Years:           %.2lf\n",years);
 
 	final_value = ((pow((final_value/initial_value),(1/years)))-1)*100;
 	printf("Annualized rate of return: %lf%%\n",final_value);
